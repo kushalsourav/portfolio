@@ -1,0 +1,36 @@
+.container {
+  margin: 0 30px;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1 {
+  font-size: 38px;
+  font-weight: 400;
+  text-align: center;
+}
+.intro {
+  font-size: 30px;
+}
+.description {
+  margin: 40px 40px;
+  font-size: 20px;
+  word-spacing: 3px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.img {
+  width: 400px;
+}
+
+.list {
+  padding: 10px;
+  font-size: 18px;
+  list-style-type: decimal-leading-zero;
+}

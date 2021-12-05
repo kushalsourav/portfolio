@@ -5,6 +5,12 @@
 body {
   font-family: Montserrat, sans-serif;
 }
+.mb-5 {
+  margin-bottom: 50px;
+}
+.mtb-3 {
+  margin: 30px 0;
+}
 .navbar {
   margin: 0 100px;
   height: 100px;
@@ -134,6 +140,12 @@ h3 {
   color: #fff;
   text-decoration: none;
   margin-inline: 50px;
+}
+.projects-list {
+  margin: 50px 200px;
+}
+.projects-list button {
+  margin-right: 30px;
 }
 
 @media (max-width: 600px) {
