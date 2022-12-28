@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fragmentation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../css/blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fragmentation</h1>
+      <span class="intro">Introduction</span>
+      <div class="description">
+        Fragmentation is an unwanted problem in the operating system in which the processes are loaded and unloaded from memory, and free memory space is fragmented. Processes can't be assigned to memory blocks due to their small size, and the memory blocks stay unused.
+        The conditions of fragmentation depend on the memory allocation system. As the process is loaded and unloaded from memory, these areas are fragmented into small pieces of memory that cannot be allocated to incoming processes. It is called fragmentation.
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Causes of Fragmentation</h3>
+          <p>User processes are loaded and unloaded from the main memory, and processes are kept in memory blocks in the main memory. Many spaces remain after process loading and swapping that another process cannot load due to their size. Main memory is available, but its space is insufficient to load another process because of the dynamical allocation of main memory processes.</p>
+        </div>
+        <div class="col">
+          <h3>Types of Fragmentation</h3>
+          <ul>
+            <li>internal fragmentation</li>
+            <li>external fragmentation</li>
+          </ul>
+          
+        </div>
+      </div>
+      <span class="intro">Internal Fragmentation</span>
+      <p class="description">
+        When a process is allocated to a memory block, and if the process is smaller than the amount of memory requested, a free space is created in the given memory block. Due to this, the free space of the memory block is unused, which causes internal fragmentation.
+      </p>
+      <span class="intro">External Fragmentation</span>
+      <p class="description">
+        External fragmentation happens when a dynamic memory allocation method allocates some memory but leaves a small amount of memory unusable. The quantity of available memory is substantially reduced if there is too much external fragmentation. There is enough memory space to complete a request, but it is not contiguous. It's known as external fragmentation.
+      </p>
+      <h2 class="heading-secondary">Advantages and disadvantages of fragmentation
+      </h2>
+    
+      <div class="description row">
+        <div class="advantages col">
+          <h3>Advantages</h3>
+          <p>There are various advantages of fragmentation. Some of them are as follows:</p>
+          <p><strong>Fast Data Writes</strong></p>
+          <p>Data write in a system that supports data fragmentation may be faster than reorganizing data storage to enable contiguous data writes.</p>
+          <p><strong>Fewer Failures</strong></p>
+          <p>If there is insufficient sequential space in a system that does not support fragmentation, the write will fail.</p>
+          <p><strong>Storage Optimization</strong></p>
+          <p>A fragmented system might potentially make better use of a storage device by utilizing every available storage block.</p>
+        </div>
+         <div class="disadvantages col">
+          <h3 class="h3">Disadvantages</h3>
+          <p>There are various disadvantages of fragmentation. Some of them are as follows:</p>
+          <p><strong>Need for regular defragmentation</strong></p>
+          <p>A more fragmented storage device's performance will degrade with time, necessitating the requirement for time-consuming defragmentation operations.</p>
+          <p><strong>Slower Read Times</strong></p>
+          <p>The time it takes to read a non-sequential file might increase as a storage device becomes more fragmented.</p>
+         </div>
+      
+      </div>
+    </div>
+    <h1>The End</h1>
+  </body>
+</html>

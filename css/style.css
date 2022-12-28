@@ -63,7 +63,7 @@ body {
 }
 
 .info {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 li {
@@ -73,12 +73,10 @@ li {
 
 .heading-secondary {
   font-size: 28px;
-  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .info-text {
-  margin-top: 10px;
   font-size: 18px;
   font-weight: 100;
 }

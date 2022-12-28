@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Data persist</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../css/blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>How to persist Data?</h1>
+      <span class="intro">Introduction</span>
+      <p class="description">
+        The Web Storage API consists of two mechanisms: sessionStorage and localStorage. Both sessionStorage and localStorage maintain a separate storage area for each available origin for the duration of the page session.
+        The main difference between sessionStorage and localStorage is that sessionStorage only maintains a storage area while the browser is open while localStorage continues to store data after the browser is closed. In other words, whereas data stored in sessionStorage is cleared when the page is closed, data stored in localStorage does not expire.
+
+      <h2 class="heading-secondary">What is localStorage in JavaScript?</h2>
+      <div class="description">
+       <blockquote>localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored in the browser will persist even after the browser window is closed.</blockquote>
+      </div>
+      <h2 class="heading-secondary">Working</h2>
+      <div >
+        <ul>
+            there are five methods
+            <li>setItem() : Add key and value to localStorage </li>
+            <li>  getItem() : This is how you get items from localStorage</li> 
+            <li> removeItem() : Remove an item by key from localStorage</li> 
+            <li>clear() : Clear all localStorage</li>  
+            <li> key() : Passed a number to retrieve the key of a localStorage</li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="heading-secondary">setItem()</h2>
+        <p class="description">setItem method is used store values in the localstorage object. it takes two arguments a key and a value, to store array of objects we need to convert it in to string first using JSON.Stringify() method</p>
+        <p class="description">
+            <blockquote>window.localStorage.setItem(key, value);</blockquote>
+        </p>
+    </div>
+    <div>
+        <h2 class="heading-secondary">getItem()</h2>
+        <p class="description">getItem method is used get values from the localstorage object. it takes single argument that is a key of the localstorage object.</p>
+        <p class="description">
+            <blockquote>window.localStorage.getItem(key);</blockquote>
+        </p>
+    </div>
+    <div>
+        <h2 class="heading-secondary">removeItem()</h2>
+        <p class="description">removeItem method is used delete  the localstorage sessions. we need to specify the key of the localStorage object, if theres no localStorage object exists in the name of that key it does nothing</p>
+        <p class="description">
+            <blockquote>window.localStorage.removeItem(key);</blockquote>
+        </p>
+    </div>
+    <div>
+        <h2 class="heading-secondary">clear()</h2>
+        <p class="description">This method is used to clear all the sessions present in the localStorage or it clears all the localStorage objects which are stored.</p>
+        <p class="description">
+            <blockquote>window.localStorage.setItem(key, value);</blockquote>
+        </p>
+    </div>
+    <h1>The End</h1>
+  </body>
+</html>

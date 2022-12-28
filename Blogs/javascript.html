@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>javascirpt</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../css/blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Is javascript compiled or interpreted language?</h1>
+      <span class="intro">Introduction</span>
+      <p class="description">
+     Javascript is interpreted line by line by the browser , it is done by javascript engine. javascript engine is different for diffrene
+     browsers. javascript executes libe by line, theres no compilation like in java. but javascript falls under the general category of "dynamic" or "interpreted" languages, but it is a compiled language
+
+      <h2 class="heading-secondary">compilation process</h2>
+      <div class="description">
+       <blockquote>In Traditional compiled language process invloves three steps in compilation process</blockquote>
+       <ol>
+        <li>Tokennizing</li>
+        <li>parsing</li>
+        <li>code generation</li>
+       </ol>
+      </div>
+      <h2 class="heading-secondary">Tokennizing</h2>
+      <p class="description">Breaking up a string of characters into meaningfull chunks called as tokens. for example consider a line of code const pi = 3.14;. This can be broken into const , pi , = , 3.14 , ; .</p>
+      <h2 class="heading-secondary">Parsing</h2>
+      <p class="description">Taking a array of tokens and turning it into a tree of nested elements, which collectively represents "Abstrct Syntax tree"</p>
+      <p class="description">
+        <ul>
+          <li>const is a variable declaration</li>
+          <li>pi is a identifer name</li>
+          <li>= assignment Expression</li>
+          <li>3.12 is a floating point literal</li>
+        </ul>
+      </p>
+      <h2 class="heading-secondary">code generation</h2>
+      <p class="description">The Process of taking an abstract syntax tree and turning it into an executable code is known as code generation.for example it takes const pi = 3.14 and turn it into a set of machine instructions to actually create a constant variable called pi and then store a value into pi.</p>
+    </div>
+    <h2 class="heading-secondary">Conclusion</h2>
+    <p class="description">Javascript engine first compiles code before it executes and in doing, it splits up statements</p>
+    <h1>The End</h1>
+  </body>
+</html>
