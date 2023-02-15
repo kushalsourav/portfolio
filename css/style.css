@@ -44,7 +44,6 @@ body {
 
 .intro {
   margin-top: 100px;
-  height: 600px;
   text-align: center;
 }
 .avatar {
@@ -127,6 +126,8 @@ h3 {
 }
 
 .socialmedia {
+  display: flex;
+  gap: 60px;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -137,7 +138,6 @@ h3 {
   font-size: 18px;
   color: #fff;
   text-decoration: none;
-  margin-inline: 50px;
 }
 .projects-list {
   margin: 50px 200px;
@@ -146,7 +146,7 @@ h3 {
   margin-right: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar {
     width: 100%;
     display: flex;
@@ -156,15 +156,35 @@ h3 {
   .navbar a {
     font-size: 18px;
   }
-  .footer {
-    width: 100%;
-    margin-left: 0%;
-    text-align: center;
-  }
   .footer h3 {
     width: 100%;
   }
   .socialmedia {
-    display: flex;
+    gap: 20px;
   }
+}
+
+@media (max-width: 480px) {
+  .intro {
+  margin-top: 100px;
+  width: 100%;
+ }
+ .avatar {
+  width: 100%;
+ }
+ .info {
+  width: 300px;
+  margin-top: 50px;
+ }
+ .heading-primary {
+  font-size: 32px;
+}
+.projects-list {
+  margin: 40px auto;
+  width: 300px;
+}
+.footer {
+  margin: 0 0;
+  width: 100%;
+}
 }
